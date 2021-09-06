@@ -16,10 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from TestApp.views import *
+from Student.views import *
 
 urlpatterns = [
     path('course-create/', CourseCreateView.as_view(), name='course_create'),
     path('coding-questions-create/', CodingQuestionsCreateView.as_view(), name='coding-questions-create'),
     path('multiple-choices-questions-create/', MultipleChoiceQuestionsCreateView.as_view(), name='multiple-choices-questions-create'),
-    path('course-list/', CourseListView.as_view(), name='course-list')
+    path('course-list/', CourseListView.as_view(), name='course-list'),
+    path('student-create/', StudentCreateView.as_view(), name='student_create'),
+
 ]
