@@ -5,3 +5,7 @@ from Student.models import *
 # Create your views here.
 class StudentCreateView(CreateAPIView):
     serializer_class = StudentSerializer
+
+class StudentListView(ListAPIView):
+    queryset = Student.objects.all()
+    serializer_class = StudentSerializer

@@ -24,5 +24,7 @@ urlpatterns = [
     path('multiple-choices-questions-create/', MultipleChoiceQuestionsCreateView.as_view(), name='multiple-choices-questions-create'),
     path('course-list/', CourseListView.as_view(), name='course-list'),
     path('student-create/', StudentCreateView.as_view(), name='student_create'),
+    path('student-list/', StudentListView.as_view(), name='student-list'),
+    path('admin/', admin.site.urls),
 
 ]
